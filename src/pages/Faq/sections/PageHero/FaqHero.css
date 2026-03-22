@@ -1,0 +1,5 @@
+/* FaqHero uses the shared page-hero styles from ContactHero.css */
+/* The page-hero-sub max-width difference for FAQ */
+.faq-page .page-hero-sub {
+  max-width: 520px;
+}

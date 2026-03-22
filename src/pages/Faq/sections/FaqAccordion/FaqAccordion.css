@@ -1,0 +1,132 @@
+/* ===== FAQ SECTION ===== */
+.faq-section {
+  padding: 100px 48px;
+  background: var(--white);
+}
+
+.faq-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Accordion */
+.faq-item {
+  border-bottom: 1px solid var(--mid-grey);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--mid-grey);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-body);
+  transition: all 0.3s;
+}
+
+.faq-question:hover { padding-left: 4px; }
+
+.faq-question h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  letter-spacing: -0.3px;
+  line-height: 1.4;
+  transition: color 0.3s;
+}
+
+.faq-question:hover h3 { color: var(--purple-600); }
+
+.faq-question-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-question-icon svg {
+  width: 16px; height: 16px;
+  color: var(--text-grey);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.active .faq-question-icon {
+  background: var(--purple-500);
+  transform: rotate(45deg);
+}
+
+.faq-item.active .faq-question-icon svg {
+  color: white;
+}
+
+.faq-item.active .faq-question h3 {
+  color: var(--purple-600);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              padding 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-answer-inner {
+  padding-bottom: 28px;
+}
+
+.faq-answer p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-grey);
+  max-width: 640px;
+}
+
+/* Coming soon state */
+.faq-item.coming-soon .faq-question {
+  cursor: default;
+}
+
+.faq-item.coming-soon .faq-question:hover {
+  padding-left: 0;
+}
+
+.faq-item.coming-soon .faq-question:hover h3 {
+  color: var(--text-dark);
+}
+
+.faq-coming-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: var(--light-grey);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-grey);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+  .faq-section { padding: 80px 32px; }
+}
+
+@media (max-width: 768px) {
+  .faq-section { padding: 64px 24px; }
+  .faq-question h3 { font-size: 16px; }
+}

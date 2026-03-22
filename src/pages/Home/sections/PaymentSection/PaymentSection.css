@@ -1,0 +1,63 @@
+/* ===== PAYMENT SECTION ===== */
+.payment-section { background: var(--off-white); position: relative; overflow: hidden; }
+
+.payment-section::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(123, 74, 237, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px; pointer-events: none;
+}
+
+.payment-layout {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 72px;
+  align-items: center; position: relative;
+}
+
+.payment-methods { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.payment-card {
+  padding: 28px 24px; background: var(--white);
+  border: 1px solid var(--mid-grey); border-radius: var(--radius-md);
+  display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.payment-card:hover {
+  transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--purple-200);
+}
+
+.payment-card-icon {
+  width: 44px; height: 44px; background: var(--purple-50);
+  border-radius: 12px; display: flex; align-items: center; justify-content: center;
+}
+
+.payment-card-icon svg { width: 20px; height: 20px; color: var(--purple-500); }
+
+.payment-card h4 {
+  font-size: 15px; font-weight: 600; color: var(--text-dark); letter-spacing: -0.2px;
+}
+
+.payment-card.featured {
+  background: var(--purple-500); border-color: var(--purple-600);
+  grid-column: span 2; flex-direction: row; align-items: center; padding: 28px 32px;
+}
+
+.payment-card.featured .payment-card-icon { background: rgba(255, 255, 255, 0.15); }
+.payment-card.featured .payment-card-icon svg { color: white; }
+.payment-card.featured h4 { color: white; }
+.payment-card.featured p { color: rgba(255, 255, 255, 0.7); font-size: 13.5px; }
+
+.payment-card.featured:hover {
+  background: var(--purple-600); transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(123, 74, 237, 0.3);
+}
+
+.payment-featured-text { display: flex; flex-direction: column; gap: 4px; }
+
+@media (max-width: 1100px) {
+  .payment-layout { grid-template-columns: 1fr; gap: 48px; }
+}
+
+@media (max-width: 768px) {
+  .payment-methods { grid-template-columns: 1fr; }
+  .payment-card.featured { grid-column: span 1; }
+}

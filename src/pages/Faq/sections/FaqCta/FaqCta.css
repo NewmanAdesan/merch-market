@@ -1,0 +1,64 @@
+/* ===== FAQ CTA ===== */
+.faq-cta {
+  margin-top: 72px;
+  padding: 48px;
+  background: var(--text-dark);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-cta::before {
+  content: ''; position: absolute; top: -60px; right: -60px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(123, 74, 237, 0.2) 0%, transparent 70%);
+  border-radius: 50%; pointer-events: none;
+}
+
+.faq-cta-text h3 {
+  font-family: var(--font-display);
+  font-size: 26px; font-weight: 400; color: white;
+  letter-spacing: -0.5px; margin-bottom: 8px;
+}
+
+.faq-cta-text h3 em {
+  font-style: italic; color: var(--purple-400);
+}
+
+.faq-cta-text p {
+  font-size: 15px; color: rgba(255, 255, 255, 0.5); line-height: 1.6;
+}
+
+.faq-cta-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 28px; flex-shrink: 0;
+  background: var(--purple-500); border-radius: var(--radius-sm);
+  text-decoration: none; color: white;
+  font-family: var(--font-body);
+  font-size: 14.5px; font-weight: 600; letter-spacing: -0.1px;
+  box-shadow: var(--shadow-purple);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-cta-btn svg { width: 16px; height: 16px; }
+
+.faq-cta-btn:hover {
+  background: var(--purple-600); transform: translateY(-2px);
+  box-shadow: 0 10px 36px rgba(123, 74, 237, 0.35);
+}
+
+@media (max-width: 768px) {
+  .faq-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-cta { padding: 32px 24px; }
+}

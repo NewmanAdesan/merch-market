@@ -1,0 +1,31 @@
+:root {
+  --white: #FFFFFF;
+  --off-white: #FAFBFD;
+  --light-grey: #F2F0F7;
+  --mid-grey: #E4E1ED;
+  --text-grey: #6E6B7B;
+  --text-dark: #1A1625;
+  --text-medium: #3D3852;
+  --purple-50: #F5F1FF;
+  --purple-100: #EDE5FF;
+  --purple-200: #D4C4FF;
+  --purple-400: #9B72FF;
+  --purple-500: #7B4AED;
+  --purple-600: #6536D4;
+  --purple-700: #4F27A8;
+  --purple-800: #3A1D7D;
+  --purple-900: #2A1458;
+  --gradient-hero: linear-gradient(165deg, #FAFBFD 0%, #F0ECFF 40%, #E8E0FF 100%);
+  --gradient-card: linear-gradient(180deg, #FFFFFF 0%, #FAFBFD 100%);
+  --gradient-accent: linear-gradient(135deg, #7B4AED 0%, #9B72FF 50%, #B794FF 100%);
+  --shadow-sm: 0 1px 3px rgba(26, 22, 37, 0.04), 0 1px 2px rgba(26, 22, 37, 0.06);
+  --shadow-md: 0 4px 16px rgba(26, 22, 37, 0.06), 0 2px 4px rgba(26, 22, 37, 0.04);
+  --shadow-lg: 0 12px 40px rgba(26, 22, 37, 0.08), 0 4px 12px rgba(26, 22, 37, 0.04);
+  --shadow-purple: 0 8px 32px rgba(123, 74, 237, 0.2);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Instrument Serif', serif;
+}
