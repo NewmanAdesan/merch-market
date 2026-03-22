@@ -25,12 +25,12 @@
 
 .response-card h3 {
   font-family: var(--font-display);
-  font-size: 32px; font-weight: 400; color: white;
+  font-size: 32px; font-weight: 700; color: white;
   letter-spacing: -0.5px; margin-bottom: 12px;
 }
 
 .response-card h3 em {
-  font-style: italic; color: var(--purple-400);
+  font-style: normal; font-weight: 800; color: var(--purple-400);
 }
 
 .response-card p {

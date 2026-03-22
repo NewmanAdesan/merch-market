@@ -22,7 +22,7 @@
 .for-text .section-desc { margin-bottom: 28px; }
 
 .for-tagline {
-  font-family: var(--font-display); font-size: 22px; font-style: italic;
+  font-family: var(--font-display); font-size: 22px; font-weight: 700;
   color: var(--purple-500); letter-spacing: -0.5px;
 }
 

@@ -21,12 +21,12 @@
 
 .faq-cta-text h3 {
   font-family: var(--font-display);
-  font-size: 26px; font-weight: 400; color: white;
+  font-size: 26px; font-weight: 700; color: white;
   letter-spacing: -0.5px; margin-bottom: 8px;
 }
 
 .faq-cta-text h3 em {
-  font-style: italic; color: var(--purple-400);
+  font-style: normal; font-weight: 800; color: var(--purple-400);
 }
 
 .faq-cta-text p {

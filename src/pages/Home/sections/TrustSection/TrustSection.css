@@ -13,7 +13,7 @@
 .trust-section .section-label { color: var(--purple-400); }
 .trust-section .section-label::before { background: var(--purple-400); }
 .trust-section .section-title { color: white; }
-.trust-section .section-title em { color: var(--purple-400); }
+.trust-section .section-title em { font-style: normal; font-weight: 800; color: var(--purple-400); }
 .trust-section .section-desc { color: rgba(255, 255, 255, 0.55); }
 
 .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }

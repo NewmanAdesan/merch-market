@@ -42,13 +42,13 @@
 
 .page-hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(38px, 5vw, 58px); font-weight: 400;
+  font-size: clamp(38px, 5vw, 58px); font-weight: 700;
   line-height: 1.1; letter-spacing: -1.5px; color: var(--text-dark);
   margin-bottom: 20px;
   opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
 }
 
-.page-hero h1 em { font-style: italic; color: var(--purple-500); }
+.page-hero h1 em { font-style: normal; font-weight: 800; color: var(--purple-500); }
 
 .page-hero-sub {
   font-size: clamp(16px, 1.8vw, 18px); line-height: 1.7;
